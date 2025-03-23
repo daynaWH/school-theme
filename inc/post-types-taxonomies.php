@@ -56,7 +56,7 @@ function school_register_custom_post_types() {
         'supports'           => array( 'title', 'editor', 'thumbnail' ),
         'template'           => array(
                                     array('core/paragraph',
-                                        array( 'placeholder' => 'Student biography' ),
+                                        array( 'placeholder' => 'Student biography here...' ),
                                     ),
                                     array('core/button',
                                         array( 'text' => 'See My Portfolio', 'url' => 'https://example.com/', 'backgroundColor' => 'primary'),
