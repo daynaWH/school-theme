@@ -202,6 +202,12 @@ function school_register_taxonomies() {
         'show_admin_column' => true,
         'query_var'         => true,
         'rewrite'           => array( 'slug' => 'staff-categories' ),
+        'capabilities'      => array(
+            'manage_terms'  => '',
+            'edit_terms'    => '',
+            'delete_terms'  => '',
+            'assign_terms'  => 'edit_posts',
+        ),
     );
     register_taxonomy( 'school-staff-category', array( 'school-staff' ), $args );
 }
