@@ -35,3 +35,12 @@ function change_title_text( $title ){
     return $title;
 }
 add_filter( 'enter_title_here', 'change_title_text' );
+
+add_action('wp_enqueue_scripts', function () {
+    wp_enqueue_style('normalize', get_theme_file_uri('/assets/css/normalize.css'), [], null);
+    wp_enqueue_style('school-style', get_stylesheet_uri());
+});
+
+add_action('enqueue_block_editor_assets', function () {
+    wp_enqueue_style('school-editor-style', get_stylesheet_uri());
+});
