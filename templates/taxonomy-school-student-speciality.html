@@ -3,18 +3,16 @@
 <!-- wp:group {"tagName":"main","metadata":{"name":"Main"},"layout":{"type":"constrained","contentSize":"62.5rem"}} -->
 <main class="wp-block-group"><!-- wp:query-title {"type":"archive","textAlign":"center","showPrefix":false} /-->
 
-<!-- wp:query {"queryId":4,"query":{"perPage":6,"pages":0,"offset":0,"postType":"school-student","order":"asc","orderBy":"title","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[],"format":[]},"layout":{"type":"default"}} -->
-<div class="wp-block-query"><!-- wp:post-template {"layout":{"type":"grid","columnCount":3,"minimumColumnWidth":null}} -->
-<!-- wp:group {"metadata":{"name":"Section"}} -->
-<div class="wp-block-group"><!-- wp:post-title {"isLink":true} /-->
+<!-- wp:query {"queryId":76,"query":{"perPage":10,"pages":0,"offset":0,"postType":"school-student","order":"asc","orderBy":"title","author":"","search":"","exclude":[],"sticky":"","inherit":true,"parents":[],"disable_pagination":true,"format":[],"include_posts":[],"meta_query":[]},"namespace":"advanced-query-loop","layout":{"type":"default"}} -->
+<div class="wp-block-query"><!-- wp:post-template {"layout":{"type":"grid","columnCount":3}} -->
+<!-- wp:post-title {"isLink":true} /-->
 
 <!-- wp:post-featured-image {"isLink":true,"aspectRatio":"3/4"} /-->
 
-<!-- wp:post-terms {"term":"school-student-speciality","prefix":"Speciality: "} /--></div>
-<!-- /wp:group -->
+<!-- wp:post-terms {"term":"school-student-speciality","prefix":"Speciality: "} /-->
 <!-- /wp:post-template -->
 
-<!-- wp:group {"metadata":{"name":"Section"},"layout":{"inherit":true,"type":"constrained"}} -->
+<!-- wp:group {"layout":{"inherit":true,"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:query-pagination {"paginationArrow":"chevron","layout":{"type":"flex","justifyContent":"space-between"}} -->
 <!-- wp:query-pagination-previous /-->
 
@@ -23,9 +21,7 @@
 <!-- wp:query-pagination-next /-->
 <!-- /wp:query-pagination --></div>
 <!-- /wp:group --></div>
-<!-- /wp:query -->
-
-<!-- wp:pattern {"slug":"school-theme/cta-application-form"} /--></main>
+<!-- /wp:query --></main>
 <!-- /wp:group -->
 
 <!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

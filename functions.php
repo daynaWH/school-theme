@@ -27,10 +27,12 @@ add_filter( 'image_size_names_choose', 'school_add_custom_image_sizes' );
 // Custom Post Types & Custom Taxonomies
 require get_template_directory() . '/inc/post-types-taxonomies.php';
 
-// Change placeholder 'Add title' to 'Add student name' for student posts
+// Change placeholder 'Add title' for student/staff posts
 function change_title_text( $title ){
     if  ( 'school-student' == get_post_type() ) {
         $title = __('Add student name', 'school-theme');
+    } else if ('school-staff' == get_post_type()) {
+        $title = __('Add staff name', 'school-theme');
     }
     return $title;
 }
