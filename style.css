@@ -25,7 +25,14 @@ h2.wp-block-query-title::after {
     background-color: var(--wp--preset--color--accent);
 }
 
-/* Student Archive */
+/* Application Form CTA Pattern - Responsive Layout */
+@media (max-width: 600px) {
+    h1.wp-block-heading.has-text-align-center {
+        font-size: 4.1rem !important;
+    }
+}
+
+/* Student Archive - Responsive Layout  */
 @media (max-width: 800px) {
     .post-type-archive-school-student
         .wp-container-core-post-template-is-layout-1,
@@ -35,9 +42,13 @@ h2.wp-block-query-title::after {
     }
 }
 
-/* Application Form CTA Pattern  */
-@media (max-width: 600px) {
-    h1.wp-block-heading.has-text-align-center {
-        font-size: 4.1rem !important;
-    }
+/* Staff Card - Job Title */
+.school-staff div > p {
+    font-style: italic;
+}
+
+/* Staff Card - Box Shadow */
+.school-staff > div {
+    box-shadow: var(--wp--preset--color--base) 6px 6px 0px -3px,
+        var(--wp--preset--color--accent) 6px 6px;
 }
