@@ -1,19 +1,21 @@
 <!-- wp:template-part {"slug":"header","tagName":"header"} /-->
 
 <!-- wp:group {"tagName":"main","metadata":{"name":"Main"},"layout":{"type":"constrained","contentSize":"62.5rem"}} -->
-<main class="wp-block-group"><!-- wp:query-title {"type":"archive","textAlign":"center","showPrefix":false} /-->
+<main class="wp-block-group"><!-- wp:query-title {"type":"archive","textAlign":"center","level":2,"showPrefix":false,"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|60"}}}} /-->
 
 <!-- wp:query {"queryId":76,"query":{"perPage":10,"pages":0,"offset":0,"postType":"school-student","order":"asc","orderBy":"title","author":"","search":"","exclude":[],"sticky":"","inherit":true,"parents":[],"disable_pagination":true,"format":[],"include_posts":[],"meta_query":[]},"namespace":"advanced-query-loop","layout":{"type":"default"}} -->
 <div class="wp-block-query"><!-- wp:post-template {"layout":{"type":"grid","columnCount":3}} -->
-<!-- wp:post-title {"isLink":true} /-->
+<!-- wp:group {"metadata":{"name":"Student Card","categories":["media","text","Team"],"patternName":"school-theme/student-card"},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:post-title {"level":3,"isLink":true} /-->
 
-<!-- wp:post-featured-image {"isLink":true,"aspectRatio":"3/4"} /-->
+<!-- wp:post-featured-image {"isLink":true,"aspectRatio":"3/4","sizeSlug":"400X500"} /-->
 
-<!-- wp:post-terms {"term":"school-student-speciality","prefix":"Speciality: "} /-->
+<!-- wp:post-terms {"term":"school-student-speciality","prefix":"Speciality: "} /--></div>
+<!-- /wp:group -->
 <!-- /wp:post-template -->
 
 <!-- wp:group {"layout":{"inherit":true,"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:query-pagination {"paginationArrow":"chevron","layout":{"type":"flex","justifyContent":"space-between"}} -->
+<div class="wp-block-group"><!-- wp:query-pagination -->
 <!-- wp:query-pagination-previous /-->
 
 <!-- wp:query-pagination-numbers /-->
