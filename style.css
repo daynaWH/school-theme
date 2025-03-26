@@ -14,3 +14,30 @@ Text Domain: school-theme
 Update URI: false
 */
 
+/* Line decoration below page titles */
+h2.wp-block-post-title::after,
+h2.wp-block-query-title::after {
+    content: "";
+    display: block;
+    width: 5rem;
+    height: 2px;
+    margin: 0.5rem auto;
+    background-color: var(--wp--preset--color--accent);
+}
+
+/* Student Archive */
+@media (max-width: 800px) {
+    .post-type-archive-school-student
+        .wp-container-core-post-template-is-layout-1,
+    .tax-school-student-speciality
+        .wp-container-core-post-template-is-layout-1 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Application Form CTA Pattern  */
+@media (max-width: 600px) {
+    h1.wp-block-heading.has-text-align-center {
+        font-size: 4.1rem !important;
+    }
+}
