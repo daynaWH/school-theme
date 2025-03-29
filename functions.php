@@ -7,6 +7,8 @@ add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style('school-style', get_stylesheet_uri());
 });
 
+
+
 add_action('enqueue_block_editor_assets', function () {
     wp_enqueue_style('school-editor-style', get_stylesheet_uri());
 });
@@ -47,3 +49,43 @@ function change_title_text( $title ){
     return $title;
 }
 add_filter( 'enter_title_here', 'change_title_text' );
+
+// Load lightGallery on the Front Page only
+add_action('wp_enqueue_scripts', function () {
+    if (is_front_page()) {
+        // lightGallery CSS
+        wp_enqueue_style(
+            'lightgallery-css',
+            'https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css',
+            [],
+            null
+        );
+
+        // lightGallery JS
+        wp_enqueue_script(
+            'lightgallery-js',
+            'https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.umd.js',
+            [],
+            null,
+            true
+        );
+
+        // lightGallery Thumbnail Plugin
+        wp_enqueue_script(
+            'lg-thumbnail',
+            'https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.umd.min.js',
+            ['lightgallery-js'],
+            null,
+            true
+        );
+
+        // Custom init script
+        wp_enqueue_script(
+            'lightgallery-init',
+            get_template_directory_uri() . '/assets/js/lightgallery-settings.js',
+            ['lightgallery-js'],
+            null,
+            true
+        );
+    }
+});

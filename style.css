@@ -52,3 +52,38 @@ h2.wp-block-query-title::after {
     box-shadow: var(--wp--preset--color--base) 6px 6px 0px -3px,
         var(--wp--preset--color--accent) 6px 6px;
 }
+
+/* Site Title - Lines */
+.site-title-lines wp-block-site-title {
+    position: relative;
+    text-align: center;
+}
+    
+.site-title-lines::before,
+.site-title-lines::after {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 2px;
+    background-color: white;
+    margin: 0 auto;
+}
+    
+.site-title-lines::before {
+    margin-bottom: 5px;
+}
+    
+.site-title-lines::after {
+    margin-top: 5px;
+}
+
+/* Apply now background */
+.apply-now-btn a {
+    background-color: #67113b; 
+    color: white !important;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+}
+
