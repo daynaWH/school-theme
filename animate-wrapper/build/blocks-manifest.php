@@ -10,6 +10,7 @@ return array(
 		'category' => 'design',
 		'icon' => 'smiley',
 		'description' => 'Wraps content in AOS animation',
+		'textdomain' => 'animate-wrapper',
 		'attributes' => array(
 			'animationType' => array(
 				'type' => 'string',
@@ -19,10 +20,6 @@ return array(
 		'supports' => array(
 			'html' => false
 		),
-		'textdomain' => 'animate-wrapper',
-		'editorScript' => 'file:./index.js',
-		'editorStyle' => 'file:./index.css',
-		'style' => 'file:./style-index.css',
-		'viewScript' => 'file:./view.js'
+		'editorScript' => 'file:./index.js'
 	)
 );

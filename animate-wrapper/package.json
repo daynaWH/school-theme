@@ -1,7 +1,7 @@
 {
 	"name": "animate-wrapper",
 	"version": "0.1.0",
-	"description": "Wraps content in AOS animation",
+	"description": "Wrap content in AOS animation",
 	"author": "The WordPress Contributors",
 	"license": "GPL-2.0-or-later",
 	"main": "build/index.js",

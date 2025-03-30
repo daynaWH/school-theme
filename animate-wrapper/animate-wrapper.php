@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:       Animate Wrapper
- * Description:       Wraps content in AOS animation
+ * Description:       Wrap content in AOS animation
  * Version:           0.1.0
  * Requires at least: 6.7
  * Requires PHP:      7.4

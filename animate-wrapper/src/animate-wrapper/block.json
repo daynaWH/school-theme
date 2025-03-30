@@ -7,18 +7,15 @@
 	"category": "design",
 	"icon": "smiley",
 	"description": "Wraps content in AOS animation",
+	"textdomain": "animate-wrapper",
 	"attributes": {
 		"animationType": {
-			"type": "string",
-			"default": "fade-up"
+		"type": "string",
+		"default": "fade-up"
 		}
 	},
 	"supports": {
 		"html": false
 	},
-	"textdomain": "animate-wrapper",
-	"editorScript": "file:./index.js",
-	"editorStyle": "file:./index.css",
-	"style": "file:./style-index.css",
-	"viewScript": "file:./view.js"
+	"editorScript": "file:./index.js"
 }
