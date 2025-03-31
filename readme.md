@@ -1,17 +1,19 @@
 <h1>School Theme</h1>
-Contributors: dayna.cho119@gmail.com, ashenricky22@gmail.com
-Requires at least: 6.7
-Tested up to: 6.7
-Requires PHP: 5.7
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+<ul>
+<li>Contributors: dayna.cho119@gmail.com, ashenricky22@gmail.com</li>
+<li>Requires at least: 6.7</li>
+<li>Tested up to: 6.7</li>
+<li>Requires PHP: 5.7</li>
+<li>License: GPLv2 or later</li>
+<li>License URI: http://www.gnu.org/licenses/gpl-2.0.html</li>
+</ul>
 
 
 <h2>Description</h2>
 The School Theme is a responsive WordPress theme designed for educational institutions, built by 2 students from BCIT FWD program.
 
 <h2>Changelog</h2>
-= 1.0.0 =
+<h3>1.0.0</h3>
 * Initial release
 
 
